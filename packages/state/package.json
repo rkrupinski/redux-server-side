@@ -1,0 +1,14 @@
+{
+  "name": "@rss/state",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "lint": "eslint ./src/**"
+  },
+  "dependencies": {
+    "@rss/shared": "0.0.0",
+    "redux": "4.1.0",
+    "redux-thunk": "2.3.0"
+  },
+  "prettier": "@rss/prettier"
+}

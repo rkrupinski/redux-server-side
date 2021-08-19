@@ -1,0 +1,22 @@
+{
+  "name": "@rss/db",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "lint": "eslint ./src/**",
+    "start": "ts-node ./src/index.ts"
+  },
+  "dependencies": {
+    "json-server": "0.16.3"
+  },
+  "devDependencies": {
+    "@types/json-server": "0.14.4",
+    "@types/node": "16.4.0"
+  },
+  "peerDependencies": {
+    "dotenv": "10.0.0",
+    "typescript": "4.3.5",
+    "ts-node": "10.1.0"
+  },
+  "prettier": "@rss/prettier"
+}
