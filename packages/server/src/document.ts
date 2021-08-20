@@ -2,6 +2,7 @@ import { Metafile } from 'esbuild';
 import { HelmetData } from 'react-helmet';
 
 import { State } from '@rss/state/src/types';
+import { F1 } from '@rss/shared/src/types';
 
 export type RenderDocumentProps = {
   html: string;
@@ -10,12 +11,12 @@ export type RenderDocumentProps = {
   meta: Metafile;
 };
 
-export const renderDocument = ({
+export const renderDocument: F1<RenderDocumentProps, string> = ({
   html,
   meta,
   state,
   head,
-}: RenderDocumentProps) => {
+}) => {
   const scripts = Object.keys(meta.outputs)
     .filter(path => /\.js$/.test(path))
     .map(path => `<script src="${path.replace('dist/', '/assets/')}"></script>`)

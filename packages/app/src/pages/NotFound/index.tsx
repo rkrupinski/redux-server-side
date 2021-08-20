@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { Link } from 'react-router-dom';
 
 import { RouteComponent } from '../../types';
 import { Layout } from '../../components/Layout';
+import { Link } from '../../components/Link';
 
 export const NotFound: RouteComponent = () => (
   <Layout title="Not found">
